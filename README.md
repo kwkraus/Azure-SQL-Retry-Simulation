@@ -5,8 +5,6 @@ languages:
 - aspx-csharp
 - csharp
 - bicep
-- typescript
-- html
 products:
 - azure
 - azure-sql-database
@@ -15,23 +13,12 @@ products:
 - azure-pipelines
 - aspnet-core
 urlFragment: todo-csharp-sql
-name: React Web App with C# API and SQL Database on Azure
-description: A complete ToDo app with C# API and Azure SQL database for storage. Uses Azure Developer CLI (azd) to build, deploy, and monitor
+name: C# API and SQL Database on Azure
+description: A Todo C# API and Azure SQL database for storage. Uses Azure Developer CLI (azd) to build, deploy, and monitor
 ---
 <!-- YAML front-matter schema: https://review.learn.microsoft.com/en-us/help/contribute/samples/process/onboarding?branch=main#supported-metadata-fields-for-readmemd -->
 
-# React Web App with C# API and SQL Database on Azure
-
-[![Open in GitHub Codespaces](https://img.shields.io/static/v1?style=for-the-badge&label=GitHub+Codespaces&message=Open&color=brightgreen&logo=github)](https://codespaces.new/azure-samples/todo-csharp-sql)
-[![Open in Dev Container](https://img.shields.io/static/v1?style=for-the-badge&label=Dev+Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/azure-samples/todo-csharp-sql)
-
-A blueprint for getting a React web app with a C# API and a SQL database running on Azure. The blueprint includes sample application code (a ToDo web app) which can be removed and replaced with your own application code. Add your own source code and leverage the Infrastructure as Code assets (written in Bicep) to get up and running quickly.
-
-Let's jump in and get this up and running in Azure. When you are finished, you will have a fully functional web app deployed to the cloud. In later steps, you'll see how to setup a pipeline and monitor the application.
-
-!["Screenshot of deployed ToDo app"](assets/web.png)
-
-<sup>Screenshot of the deployed ToDo app</sup>
+# Azure SQL Retry Simulation 
 
 ### Prerequisites
 > This template will create infrastructure and deploy code to Azure. If you don't have an Azure Subscription, you can sign up for a [free account here](https://azure.microsoft.com/free/). Make sure you have contributor role to the Azure subscription.
@@ -40,23 +27,8 @@ The following prerequisites are required to use this application. Please ensure 
 
 - [Azure Developer CLI](https://aka.ms/azd-install)
 - [.NET SDK 6.0](https://dotnet.microsoft.com/download/dotnet/6.0) - for the API backend
-- [Node.js with npm (16.13.1+)](https://nodejs.org/) - for the Web frontend
 
 ### Quickstart
-To learn how to get started with any template, follow the steps in [this quickstart](https://learn.microsoft.com/azure/developer/azure-developer-cli/get-started?tabs=localinstall&pivots=programming-language-csharp) with this template (`Azure-Samples/todo-csharp-sql`).
-
-This quickstart will show you how to authenticate on Azure, initialize using a template, provision infrastructure and deploy code on Azure via the following commands:
-
-```bash
-# Log in to azd. Only required once per-install.
-azd auth login
-
-# First-time project setup. Initialize a project in the current directory, using this template. 
-azd init --template Azure-Samples/todo-csharp-sql
-
-# Provision and deploy to Azure
-azd up
-```
 
 ### Application Architecture
 
